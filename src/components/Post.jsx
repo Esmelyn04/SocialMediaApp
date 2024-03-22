@@ -4,10 +4,10 @@ import Comment from './Comment';
 
 function Post(){
 
-    const [likes, setLikes] = useState(0);
+    let [likes, setLikes] = useState(0);
 
     function handleLike(){
-        likes = likes + 1;
+        setLikes(likes + 1);
     }
 
     return(

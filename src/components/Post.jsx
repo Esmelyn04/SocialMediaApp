@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import Comment from './Comment';
 
@@ -11,7 +11,7 @@ function Post(props){
     }
 
     return(
-        <div>
+        <div className="message-container" >
             <h3>{props.content}</h3>
             <p>Likes: {likes}</p>
             <button onClick={handleLike}>Like</button>
